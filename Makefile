@@ -1,7 +1,9 @@
 .PHONY: all
 
-all: test
+all: test check
 
 test: test.c
 	gcc -o test test.c
 
+check: test
+	./test
